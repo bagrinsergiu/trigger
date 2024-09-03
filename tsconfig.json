@@ -10,7 +10,7 @@
     "paths": {
       "@/*": ["src/*"],
       "@@/*": ["src/.umi/*"],
-      "rc-trigger": ["src/index.ts"]
+      "rc-trigger": ["src/index.tsx"]
     }
   }
 }

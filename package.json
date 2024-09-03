@@ -1,6 +1,6 @@
 {
   "name": "rc-trigger",
-  "version": "5.3.4",
+  "version": "5.3.4-fix-babel-runtime-v1",
   "description": "base abstract trigger component for react",
   "engines": {
     "node": ">=8.x"
@@ -40,6 +40,7 @@
     "now-build": "npm run build"
   },
   "devDependencies": {
+    "@rc-component/father-plugin": "^1.0.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.0",
     "@types/classnames": "^2.2.10",
@@ -49,6 +50,7 @@
     "cross-env": "^7.0.1",
     "dumi": "^1.1.38",
     "eslint": "^7.0.0",
+    "eslint-plugin-unicorn": "^36.0.0",
     "father": "^4.0.0",
     "less": "^3.10.3",
     "np": "^6.2.0",
@@ -56,11 +58,10 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "regenerator-runtime": "^0.13.7",
-    "typescript": "^4.0.0",
-    "@rc-component/father-plugin": "^1.0.0"
+    "typescript": "^4.0.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.18.3",
+    "@babel/runtime": "^7.11.2",
     "classnames": "^2.2.6",
     "rc-align": "^4.0.0",
     "rc-motion": "^2.0.0",
@@ -69,5 +70,8 @@
   "peerDependencies": {
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
+  },
+  "overrides": {
+    "@babel/runtime": "^7.11.2"
   }
 }
